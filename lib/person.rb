@@ -33,6 +33,4 @@ end
   raise RuntimeError, 'No account present'
  end
 
-
-
 end
