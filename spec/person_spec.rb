@@ -41,7 +41,7 @@ describe Person do
     it 'and can deposit funds' do
       expect(subject.deposit(100)).to be_truthy
     end
-  #end
+
     # next is to pass this test
     describe 'can not manage funds if no account been created' do
       #binding.pry
