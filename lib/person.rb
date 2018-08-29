@@ -1,3 +1,5 @@
+require './lib/account.rb'
+
 class Person
   attr_accessor :name, :cash, :account
   
@@ -5,14 +7,17 @@ class Person
   @name = set_name(attrs[:name])
   @cash = 0
   @account = nil
+  @deposit = true
   end
 
 # next to be fixed
   def create_account
-    @account = Account.new(owner)
+    @account = Account.new(owner: self)
   end
 
-  
+  def deposit(amount)
+   @account.balance += amount
+  end
 
 
 private
