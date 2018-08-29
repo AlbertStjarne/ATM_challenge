@@ -14,7 +14,7 @@ describe Account do
 
   it 'deactivate account using Instance method' do
     subject.deactivate
-    expect(subject.account_status).to eq :deactivated 
+    expect(subject.deactivate).to eq :deactivated 
   end
 
 end
