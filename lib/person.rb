@@ -1,4 +1,5 @@
 require './lib/account.rb'
+require 'pry'
 
 class Person
   attr_accessor :name, :cash, :account
@@ -16,6 +17,7 @@ class Person
   end
 
   def deposit(amount)
+    #binding.pry
    @account.balance += amount
   end
 

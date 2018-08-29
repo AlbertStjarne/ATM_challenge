@@ -29,4 +29,10 @@ describe Account do
     expect { described_class.new }.to raise_error 'An Account owner is required'
   end
 
+  it 'check a valid pin code' do
+    pin = subject.pin_code
+    pin_length = Math.log10(pin).to_i + 1
+    expect(pin_length).to eq 4
+  end
+
 end
