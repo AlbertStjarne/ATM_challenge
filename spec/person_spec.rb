@@ -53,6 +53,11 @@ describe Person do
       command = lambda { subject.withdraw(amount: 100, pin: subject.account.pin_code, account: subject.account, atm: atm) }
       expect(command.call).to be_truthy
     end
+# lambda is a away for us to call methods inside a variable and then to use it
+# you need only command.call without writing the entire method.
+# you can place as many methods you want inside a lambda.
+# in this case, we placed only the withdraw method inside and we put the arguments such as amoun, pin..
+
 
     it 'withdraw is expected to raise error if no ATM is passed in' do
       command = lambda { subject.withdraw(amount: 100, pin: subject.account.pin_code, account: subject.account) }

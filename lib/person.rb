@@ -39,7 +39,8 @@ def withdraw_funds(example1)
   response = atm.withdraw(amount, pin, account)
   response[:status] == true ? increase_cash(response) : response
 end
-
+#what happens here is that we already have every method, 
+#we're just passing the arguments(which are the value from the test)
 
 
 def increase_cash(response)
