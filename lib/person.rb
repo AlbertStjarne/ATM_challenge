@@ -30,7 +30,7 @@ def missing_name
 end
 
  def missing_account
-  raise RuntimeError, 'No account present'
+   raise RuntimeError, 'No account present'
  end
 
 end
