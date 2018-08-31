@@ -11,7 +11,7 @@ Tests can be run in the terminal either with:
 
 ## Running in irb
 Below are some of the functionalities in this ATM simulator.
-
+```
 $ irb
 > load 'lib/person.rb'
 > atm = Atm.new
@@ -22,7 +22,7 @@ $ irb
 > customer1.withdraw(30)
 > customer1.withdraw(amount: 30,pin: 8436, account: customer1.account, atm: atm )
 > customer1
-
+```
 ## Built with
 The project is built with Ruby as programming language.
 
